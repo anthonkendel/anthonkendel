@@ -1,0 +1,35 @@
+{
+  "name": "anthonkendel",
+  "version": "1.0.0",
+  "description": "GitHub profile",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonkendel/anthonkendel.git"
+  },
+  "keywords": [
+    "README",
+    "GitHub"
+  ],
+  "author": "Anthon <anthon.kendel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonkendel/anthonkendel/issues"
+  },
+  "homepage": "https://github.com/anthonkendel/anthonkendel#readme",
+  "devDependencies": {
+    "@arbetsmyra/commitlint-config": "^2.0.0",
+    "@commitlint/cli": "^9.1.2",
+    "husky": "^4.2.5"
+  },
+  "commitlint": {
+    "extends": [
+      "@arbetsmyra"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
